@@ -78,6 +78,30 @@ class ProductManager {
         }
         return product;
     }
+
+    updateProduct(id, updatedFields) {
+        const index = this.#products.findIndex(product => product.id === id);
+        if (index === -1) {
+            console.error("Producto no encontrado.");
+            return;
+        }
+
+        this.#products[index] = { ...this.#products[index], ...updatedFields };
+        this.saveProducts();
+        console.log("Producto actualizado correctamente.");
+    }
+
+    deleteProduct(id) {
+        const index = this.#products.findIndex(product => product.id === id);
+        if (index === -1) {
+            console.error("Producto no encontrado.");
+            return;
+        }
+
+        this.#products.splice(index, 1);
+        this.saveProducts();
+        console.log("Producto eliminado correctamente.");
+    }
 }
 
 module.exports = ProductManager;

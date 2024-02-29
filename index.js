@@ -14,3 +14,11 @@ console.log('Todos los productos:', productManager.getProducts());
 // Obtener un producto por ID
 console.log('Producto con ID 2:', productManager.getProductById(2));
 console.log('Producto con ID 5:', productManager.getProductById(5)); // Producto no encontrado
+
+// Actualizar un producto
+productManager.updateProduct(2, { price: 29.99, stock: 120 });
+console.log('Producto actualizado:', productManager.getProductById(2));
+
+// Eliminar un producto
+productManager.deleteProduct(1);
+console.log('Productos después de eliminar uno:', productManager.getProducts());
