@@ -1,1 +1,92 @@
-[]
+[
+  {
+      "id": 1,
+      "title": "Camisa de algodón",
+      "description": "Camisa de algodón con botones y cuello redondo",
+      "price": 29.99,
+      "thumbnail": "https://example.com/camisa1.jpg",
+      "code": "CAM001",
+      "stock": 50
+  },
+  {
+      "id": 2,
+      "title": "Pantalones vaqueros",
+      "description": "Pantalones vaqueros de ajuste regular",
+      "price": 39.99,
+      "thumbnail": "https://example.com/pantalon1.jpg",
+      "code": "PAN002",
+      "stock": 30
+  },
+  {
+      "id": 3,
+      "title": "Zapatos de cuero",
+      "description": "Zapatos de cuero genuino con suela de goma",
+      "price": 59.99,
+      "thumbnail": "https://example.com/zapatos1.jpg",
+      "code": "ZAP003",
+      "stock": 25
+  },
+  {
+      "id": 4,
+      "title": "Reloj de pulsera",
+      "description": "Reloj de pulsera analógico con correa de cuero",
+      "price": 49.99,
+      "thumbnail": "https://example.com/reloj1.jpg",
+      "code": "REL004",
+      "stock": 40
+  },
+  {
+      "id": 5,
+      "title": "Teléfono inteligente",
+      "description": "Teléfono inteligente con pantalla táctil y cámara de alta resolución",
+      "price": 299.99,
+      "thumbnail": "https://example.com/telefono1.jpg",
+      "code": "TEL005",
+      "stock": 15
+  },
+  {
+      "id": 6,
+      "title": "Portátil",
+      "description": "Portátil ligero con procesador rápido y pantalla HD",
+      "price": 699.99,
+      "thumbnail": "https://example.com/portatil1.jpg",
+      "code": "POR006",
+      "stock": 20
+  },
+  {
+      "id": 7,
+      "title": "Auriculares inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido y larga duración de la batería",
+      "price": 79.99,
+      "thumbnail": "https://example.com/auriculares1.jpg",
+      "code": "AUR007",
+      "stock": 35
+  },
+  {
+      "id": 8,
+      "title": "Tablet",
+      "description": "Tablet con pantalla retina y capacidad de almacenamiento ampliable",
+      "price": 199.99,
+      "thumbnail": "https://example.com/tablet1.jpg",
+      "code": "TAB008",
+      "stock": 10
+  },
+  {
+      "id": 9,
+      "title": "Cámara digital",
+      "description": "Cámara digital compacta con zoom óptico de 10x",
+      "price": 149.99,
+      "thumbnail": "https://example.com/camara1.jpg",
+      "code": "CAM009",
+      "stock": 20
+  },
+  {
+      "id": 10,
+      "title": "Teclado inalámbrico",
+      "description": "Teclado inalámbrico delgado y ergonómico con teclas silenciosas",
+      "price": 29.99,
+      "thumbnail": "https://example.com/teclado1.jpg",
+      "code": "TEC010",
+      "stock": 50
+  }
+]

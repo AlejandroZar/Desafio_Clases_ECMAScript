@@ -1,0 +1,17 @@
+# Carpeta node_modules generada por npm
+node_modules/
+
+# Archivo de bloqueo para el sistema de archivos de npm
+package-lock.json
+
+# Carpeta generada por yarn
+yarn-error.log
+yarn.lock
+
+# Entorno de desarrollo generado por IntelliJ IDEA
+.idea/
+
+# Entorno de desarrollo generado por Visual Studio Code
+.vscode/
+
+# Otros archivos o carpetas generados localmente que no se deben incluir

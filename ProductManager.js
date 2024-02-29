@@ -12,9 +12,9 @@ class ProductManager {
         this.loadProducts();
     }
 
-    loadProducts() {
+    async loadProducts() {
         try {
-            const data = fs.readFileSync(this.#path, 'utf8');
+            const data = await fs.promises.readFile(this.#path, 'utf8');
             this.#products = JSON.parse(data);
             if (this.#products.length > 0) {
                 // Find the maximum id in the loaded products
@@ -27,10 +27,10 @@ class ProductManager {
         }
     }
 
-    saveProducts() {
+    async saveProducts() {
         try {
             const data = JSON.stringify(this.#products, null, 2);
-            fs.writeFileSync(this.#path, data);
+            await fs.promises.writeFile(this.#path, data);
             console.log('Products saved successfully.');
         } catch (err) {
             console.error('Error writing to file:', err);
@@ -66,8 +66,12 @@ class ProductManager {
         console.log('Producto agregado');
     }
 
-    getProducts() {
-        return this.#products;
+    getProducts(limit) {
+        if (limit) {
+            return this.#products.slice(0, limit);
+        } else {
+            return this.#products;
+        }
     }
 
     getProductById(id) {
